@@ -1,13 +1,65 @@
+/* App.css */
 body {
+  background-color: #202020; /* Dark background for bold contrast */
+  font-family: 'Arial', sans-serif;
+  color: #FFF; /* Light text for readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+form {
+  border: 3px solid #FFF; /* Bold border */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #303030; /* Slightly lighter than body for contrast */
 }
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 20px; /* Larger, bolder labels */
+  font-weight: bold;
+}
+
+input {
+  width: 300px; /* Larger input fields */
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #FFF; /* Bold and contrasting */
+  background-color: #404040; /* Darker input background */
+  color: #FFF; /* Light text color */
+  font-size: 18px; /* Larger text */
+}
+
+/* Focus styles for inputs to enhance usability */
+input:focus {
+  outline: none;
+  border-color: #50a0d0;
+}
+
+button {
+  padding: 15px 30px;
+  border: 2px solid #FFF; /* Bold border */
+  background-color: #505050; /* Dark button background */
+  color: #FFF; /* Light button text */
+  cursor: pointer;
+  font-size: 18px; /* Larger button text */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #606060; /* Lighter on hover for interactivity */
+}
+
+/* Additional styles for alternating input styles might be removed to keep the bold and artistic theme consistent */
