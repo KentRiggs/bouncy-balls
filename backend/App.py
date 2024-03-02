@@ -26,10 +26,10 @@ BACKGROUND_COLOR = (0, 0, 0)
 def get_user_input():
     # Collect user inputs
     username = input("Enter your name: ")
-    print(f"Welcome to the Bouncy Balls Simulator, {username}!")  # Personalized welcome message
-    num_balls = int(input("Enter the number of balls: "))
-    min_size = int(input("Enter minimum ball size as low as 1: "))
-    max_size = int(input("Enter maximum ball size up to 100: "))
+    print(f"Welcome to the Bouncy Balls Simulator, {username}!")  
+    num_balls = int(input("Enter the number of balls up to 999: "))
+    min_size = int(input("Enter minimum ball size. No less than 1: "))
+    max_size = int(input("Enter maximum ball size. Up to 100: "))
     return username, num_balls, min_size, max_size
 
 def generate_balls(screen, num_balls, min_size, max_size):
